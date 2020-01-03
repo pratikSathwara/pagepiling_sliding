@@ -1,0 +1,397 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+*{
+    outline: none;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,ul,ol{
+    margin: 0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+#pagepiling{
+  position: relative;
+    width: calc(100% - 140px);
+    margin:0px 70px;
+    height: 100vh;
+}
+
+.container{
+    position: relative;
+   width: 1170px;
+    margin: 0 auto;
+}
+.container:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.container-fluid{
+    position: relative;
+   max-width: 100%;
+   padding: 10px;
+    margin: 0 auto;
+}
+.container-fluid:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0px;
+  background: #fff;
+}
+
+.navbar:after {
+  display: block;
+  clear: both;
+  content: " ";
+}
+
+.navbar_padding:after {
+  display: block;
+  clear: both;
+  content: " ";
+}
+.logo {
+  float: left;
+
+}
+.logo h1{
+font-weight: 400;
+display: inline-block;
+font-size: 30px;
+letter-spacing: 10px;
+}
+/*.logo img {
+  width: 100%;
+}*/
+
+.menu {
+  position: relative;
+ display: inline-block;
+     padding-top: 8px;
+}
+.menu .active a{
+    color: #c0c79c;
+       
+    padding-bottom: 10px;
+}
+.menu li{
+   display: inline-block;
+}
+.menu li a {
+  text-align: center;
+  color: #333; font-weight: 600;
+  font-size: 16px;
+  margin: 0px 15px;
+  transition: 0.2s all;
+  text-transform: uppercase;
+}
+.menuhover .closebtn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    color: #fff;
+  }
+.search{
+  display: inline-block;
+  float: right;
+  position: relative;
+}
+#search_ip{
+    width: 100%;
+    height: 0%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+    transition: 0.5s;
+    overflow-y: hidden;
+}
+#search_ip input{
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 18px;
+    position: relative;
+    transition: 0.5s;
+}
+#search_ip  .fa{
+    position: absolute;
+    right: 21px;
+    margin-top: -11px;
+    font-size: 23px;
+    color: #FA4;
+}
+.search_bx{
+  max-width: 900px;
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.search .fa{
+position: absolute;
+right: 10px;
+top: 10px;
+cursor: pointer;
+}
+.search .fa:hover{
+  color: #4caf50;
+}
+.searchclose {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    color: #fff;
+    z-index: 99;
+  }
+.press {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 30px;
+}
+
+.press span {
+  display: block;
+  margin: 6px;
+  width: 30px;
+  height: 3px;
+  background: #000;
+}
+
+.press:hover>span {
+  background: #876;
+}
+
+.menu li a:hover {
+    color: #c0c79c;
+    padding-bottom: 10px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.sticky+.banner {
+  padding-top: 60px;
+}
+.home_area{
+    background: url(../img/about-visual-v2.jpg) no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: table;
+}
+.home_area h2{
+    font-size: 4em;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.home_area h2 span:last-child{
+      padding-left: 148px;  
+}
+.about_area{
+    background: url(../img/about-why.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: table;
+}
+
+.about_text{
+    color: #fff;
+    padding: 10px;
+}
+.about_text h2{
+  font-size: 45px;
+  margin-bottom: 22px;
+}
+.about_text p{
+  font-size: 20px;
+  line-height: 1.5;
+  margin:0px;
+}
+
+.slill_area{
+   background: url(../img/about-make-v2.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: table;
+    color: #333;
+}
+.slill_area h2{
+  font-size: 45px;
+  margin-bottom: 22px;
+}
+.slill_area p{
+  font-size: 20px;
+  line-height: 1.5;
+  margin:10px 0px;
+}
+.contact_area{
+     background: url(../img/about-think.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: table;
+    color: #fff;
+}
+.contact_area h2{
+  font-size: 45px;
+  margin-bottom: 22px;
+}
+.contact_area p{
+  font-size: 20px;
+  line-height: 1.5;
+  margin:0px;
+}
+
+.footer{
+  position: relative;
+background: red;
+  z-index: 100;
+    padding-top: 70px;
+    font-size: 20px;
+    height: auto;
+}
+.footer p{
+float: left;
+}
+.f_social{
+    float: right;
+    list-style-type: none;
+}
+.f_social li{
+    display: inline-block;
+
+}
+.f_social li a{
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@media (max-width: 991px){
+.container{
+    width: 90%;
+   } 
+}
+@media (max-width: 768px){
+   .container{
+    width: 90%;
+   } 
+  .menu {
+    width:100%;
+    right: 0;
+    position: relative;   
+    margin: 20% 0px 0px;    
+  }
+  .menu li{
+    display: block;
+  }
+  .menu li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+  }
+  .menu .active a{
+   color: #fff;
+   padding-bottom: 10px;
+   border-bottom: 2px solid #fff;
+  }
+  .menuhover {
+    height: 0%;
+    width: calc(100% - 20px);
+    position: fixed;
+        margin: 10px;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color:rgba(248, 177, 149, 1);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .press {
+    display: block;
+    cursor: pointer;
+  }
+  .show {
+    display: block;
+  }
+  .search{
+    position: absolute;
+    display: none;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .banner_btn{
+    margin-right: 0;
+  }
+    .menuhover .closebtn{
+    display: block;
+  }
+  .home_area h2{
+        font-size: 2.7em;
+  }
+  .about_text h2{
+        font-size: 35px;
+  }
+  .slill_area h2{
+    font-size: 35px;
+  }
+  .contact_area h2{
+    font-size: 35px;
+  }
+.information{
+        text-align: center;
+         min-height: auto;
+         padding-top: 0;
+}
+.information li{
+   
+        display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 0;
+}
+.footer {
+    padding-top: 40px;}
+  .show{max-height: 500px;}
+
+}
