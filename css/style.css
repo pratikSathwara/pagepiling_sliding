@@ -260,8 +260,8 @@ cursor: pointer;
      background: url(../img/about-think.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
-    display: table;
     color: #fff;
+    max-width: 100%;
 }
 .contact_area h2{
   font-size: 45px;
